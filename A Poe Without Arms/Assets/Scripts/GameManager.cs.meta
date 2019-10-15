@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 3912511f125b88b4fb59e09a29b934d8
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - painelCompleto: {fileID: 3211935735007039796, guid: a68dccb028255c540a97321489ce230e,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

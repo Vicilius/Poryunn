@@ -2,20 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Fantasma : MonoBehaviour
+public class fantasmaFrente : MonoBehaviour
 {
 
     private bool colide = false;
     private float move = -2;
-
+    // Start is called before the first frame update
     void Start()
     {
         
     }
 
+    // Update is called once per frame
     void Update()
     {
-        GetComponent<Rigidbody2D>().velocity = new Vector2(move, GetComponent<Rigidbody2D>().velocity.y);
+        GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, move);
         if (colide)
         {
             Flip();
@@ -25,7 +26,7 @@ public class Fantasma : MonoBehaviour
     private void Flip()
     {
         move *= -1;
-        GetComponent<SpriteRenderer>().flipX = !GetComponent<SpriteRenderer>().flipX;
+        GetComponent<SpriteRenderer>().flipY = !GetComponent<SpriteRenderer>().flipY;
         colide = false;
     }
 
@@ -48,6 +49,4 @@ public class Fantasma : MonoBehaviour
             colide = false;
         }
     }
-
-
 }

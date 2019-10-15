@@ -6,6 +6,11 @@ TagManager:
   tags:
   - alavanca
   - mundo
+  - fantasma
+  - bloco-trancado
+  - primeiraAlavanca
+  - segundaAlavanca
+  - orbe
   layers:
   - Default
   - TransparentFX
